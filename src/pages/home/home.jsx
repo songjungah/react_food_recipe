@@ -8,6 +8,8 @@ import DetailItem from '../../components/detail-item/detail-item';
 
 export default function Home(){
 
+
+    
     const {foodList} = useContext(GlobalContext);
     return(
         <div className='home-container'>

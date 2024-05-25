@@ -1,0 +1,28 @@
+.favorites-container{
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 2rem 0;
+}
+
+.no-item-style{
+    text-align: center;
+    font-size: 1.25rem;
+    color: black;
+    font-weight: 800;
+}
+
+
+@media (max-width:1024pxp){
+    .no-item{
+        font-size: 2.25rem;
+    }
+}
+
+@media (max-width:768pxp){
+    .favorites-container{
+        max-width: 640px;
+    }
+}

@@ -1,8 +1,5 @@
 import { createContext, useState } from "react";
 
-// https://forkify-api.herokuapp.com/api/v2
-// https://forkify-api.herokuapp.com/api/v2/recipes?search=${재료명}
-
 export const GlobalContext = createContext(null);     // useContext로 가져다 쓸 수 있음
 console.log('context render');
 
@@ -61,9 +58,7 @@ export default function GlobalState({children})
   }
 
   return(
-    <GlobalContext.Provider value={{searchParam, setSearchParam, hSubmit, 
-    foodList, setFoodList, foodDetailData, setFoodDetailData, favoritesList,
-    hAddToFavorite}}>
+    <GlobalContext.Provider value={{searchParam, setSearchParam, hSubmit, foodList, setFoodList, foodDetailData, setFoodDetailData, favoritesList, hAddToFavorite}}>
       {children}
     </GlobalContext.Provider>
   )

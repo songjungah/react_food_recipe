@@ -22,13 +22,13 @@
     border-radius: 8px;
 }
 
-@media (min-width:1024pxp){
+@media (max-width:1024pxp){
     .no-item{
         font-size: 2.25rem;
     }
 }
 
-@media (min-width:768pxp){
+@media (max-width:768pxp){
     .home-container{
         max-width: 640px;
     }
